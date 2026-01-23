@@ -68,7 +68,7 @@ I build reliable software, ship clean abstractions, and turn messy workflows int
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=davephoenix360&layout=compact&hide_border=true" />
 </p>
 
-#### School GitHub
+#### [School GitHub](https://github.com/DIEPREYECD) 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=DIEPREYECD&show_icons=true&hide_title=true&hide_rank=true" />
 </p>
