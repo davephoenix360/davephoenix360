@@ -24,6 +24,12 @@
 
 <br />
 
+### ▶ WAVE 1 — DEFEND THE CONTRIBUTION GRAPH
+
+<img src="https://raw.githubusercontent.com/davephoenix360/davephoenix360/main/assets/space-invader.svg" width="100%" alt="Space Invaders arcade scene — animated SVG of pixel invaders, a sliding player ship, a firing bullet, and a starfield. Pure SMIL animation, GitHub README-safe." />
+
+<sub><i>↑ <b>WAVE 1.</b> 15 invaders on screen. one ship. one bullet. <code>SMIL</code>-animated SVG — no JavaScript, no GitHub Action, works in any modern browser. Want it to <i>actually</i> reflect your commit history? Swap in the <a href="https://github.com/marketplace/actions/commit-invaders">Commit Invaders action</a>.</i></sub>
+
 <div align="center">
 
 <img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=18&duration=3000&pause=1200&color=39FF14&center=true&vCenter=true&width=600&height=80&lines=PLAYER+1+:+DIEPREYE;SOFTWARE+ENGINEER+%40+UALBERTA;BACKEND+%2F+DEVOPS+%2F+SYSTEMS;I+BUILD+STUFF+THAT+DOES+THINGS" alt="Typing SVG" />
@@ -170,13 +176,11 @@ loot:      PHP/WordPress (legacy), Unity (side-quest), three.js (new hobby)
 
 ### <span class="pixel">▶ PLAYER 1'S CURRENTLY PLAYING</span>
 
-<a href="https://open.spotify.com/" target="_blank">
+<a href="https://open.spotify.com/user/31sz7w3gc4kdmmuwvsjf7x2v2w4u" target="_blank">
   <img src="https://img.shields.io/badge/Spotify-1ED760?style=for-the-badge&logo=spotify&logoColor=black" alt="Spotify" />
 </a>
 
 <sub><i>♪ something with a beat, probably. maybe lo-fi. definitely not silence.</i></sub>
-
-<sub><i>(replace the URL above with your Spotify profile link — or remove this whole block if you don't want it)</i></sub>
 
 </div>
 
