@@ -1,0 +1,33 @@
+name: Generate Commit Invaders
+
+# Generates an animated SVG space-invaders game from your contribution
+# graph and commits the SVGs to the `output` branch. The README on
+# `main` references those SVGs via raw.githubusercontent.com so the
+# game appears in the profile README.
+
+on:
+  schedule:
+    # Daily at 00:00 UTC. Updates the SVG so the wave reflects the
+    # last 365 days of contributions.
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Manual trigger from the Actions tab
+
+permissions:
+  contents: write # Needed to commit the generated SVGs to `output` branch
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate Commit Invaders SVG
+        uses: Goblinlordx/commit-invaders@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_user_name: davephoenix360
+          # Disable the high-score board to keep the SVG compact
+          # for a profile README. The wave + invader + laser
+          # animation is the headline.
+          no_scoreboard: true
