@@ -1,116 +1,21 @@
 <!--
   davephoenix360 — GitHub profile README
   Theme: retro arcade / CRT / pixel
-  No build step; HTML+CSS in a markdown HTML block.
-  Live dynamic widgets: typing SVG, visitor counter, streak, trophies, stats.
+  No build step. GitHub strips <style>/<link> at the top of READMEs
+  (and the CSS was rendering as visible raw text), so the aesthetic
+  here uses the typing-SVG widget + Unicode box-drawing only.
+  The page falls back to default GitHub markdown styling for everything
+  else, which is clean and readable.
 -->
-
-<!-- Load a pixel font for any inline text + a mono for stats -->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
-
-<style>
-  /* === CRT scanline overlay across the whole README === */
-  /* The host page is a <div> GitHub renders. We paint a subtle scanline
-     pattern into the README container. Low opacity, fixed position. */
-  .markdown-body,
-  article {
-    position: relative;
-  }
-  .markdown-body::after,
-  article::after {
-    content: "";
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    background: repeating-linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 0,
-      rgba(0, 0, 0, 0) 2px,
-      rgba(0, 0, 0, 0.08) 3px,
-      rgba(0, 0, 0, 0) 4px
-    );
-    z-index: 9999;
-    mix-blend-mode: multiply;
-  }
-  /* Tiny CRT vignette */
-  .markdown-body::before,
-  article::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 55%, rgba(0,0,0,0.35) 100%);
-    z-index: 9998;
-  }
-  /* Pixel-rendering of the few headings we write in raw text */
-  .pixel {
-    font-family: "Press Start 2P", "VT323", monospace;
-    letter-spacing: 0.05em;
-  }
-  .crt-text {
-    font-family: "VT323", "JetBrains Mono", monospace;
-    color: #39ff14;
-    text-shadow: 0 0 1px #39ff14, 0 0 6px rgba(57, 255, 20, 0.35);
-  }
-  /* "INSERT COIN" pill */
-  .coin {
-    display: inline-block;
-    padding: 6px 14px;
-    margin: 2px 4px;
-    border: 2px solid #ffcc00;
-    color: #ffcc00;
-    font-family: "Press Start 2P", monospace;
-    font-size: 10px;
-    text-decoration: none;
-    background: rgba(255, 204, 0, 0.06);
-    box-shadow: 0 0 0 2px #000, 0 0 12px rgba(255, 204, 0, 0.4);
-    transition: transform 0.15s ease;
-  }
-  .coin:hover { transform: translateY(-1px) scale(1.04); color: #fff; }
-  .coin.ghost { border-color: #00ffff; color: #00ffff; background: rgba(0,255,255,0.06); box-shadow: 0 0 0 2px #000, 0 0 12px rgba(0,255,255,0.35); }
-  .coin.heart { border-color: #ff3131; color: #ff3131; background: rgba(255,49,49,0.06); box-shadow: 0 0 0 2px #000, 0 0 12px rgba(255,49,49,0.35); }
-  /* "ACHIEVEMENT UNLOCKED" badge */
-  .achievement {
-    display: inline-block;
-    padding: 2px 8px;
-    margin-right: 6px;
-    background: #39ff14;
-    color: #000;
-    font-family: "Press Start 2P", monospace;
-    font-size: 9px;
-    border: 2px solid #000;
-    box-shadow: 3px 3px 0 #000;
-  }
-  /* Pixel block divider */
-  .block-divider { color: #39ff14; opacity: 0.7; }
-  /* Tables = leaderboard look */
-  .markdown-body table {
-    border-collapse: collapse;
-  }
-  .markdown-body table th,
-  .markdown-body table td {
-    border: 1px solid #39ff14 !important;
-    padding: 8px 12px !important;
-  }
-  .markdown-body table th {
-    background: #0d0d0d;
-    color: #ffcc00;
-    font-family: "Press Start 2P", monospace;
-    font-size: 10px;
-  }
-</style>
 
 <div align="center">
 
 ```
-██╗  ██╗██╗███████╗██████╗ ██████╗ ███████╗██╗   ██╗███████╗
-██║  ██║██║██╔════╝██╔══██╗██╔══██╗██╔════╝╚██╗ ██╔╝██╔════╝
-███████║██║█████╗  ██████╔╝██████╔╝█████╗    ╚████╔╝ █████╗  
-██╔══██║██║██╔══╝  ██╔═══╝ ██╔══██╗██╔══╝      ╚██╔╝  ██╔══╝  
-██║  ██║██║███████╗██║     ██║  ██║███████╗     ██║   ███████╗
-╚═╝  ╚═╝╚═╝╚══════╝╚═╝     ╚═╝  ╚═╝╚══════╝     ╚═╝   ╚══════╝
+█████  █████  █████  ████   ████   █████  █   █  █████
+█   █    █    █      █   █  █   █  █      █   █  █    
+█   █    █    ████   ████   ████   ████    ███   ████ 
+█   █    █    █      █      █  █   █         █   █    
+█████  █████  █████  █      █   █  █████     █   █████
 ```
 
 > <sub><b>↑ yes, I drew that in ASCII. yes, by hand. yes, I'm procrastinating.</b></sub>
